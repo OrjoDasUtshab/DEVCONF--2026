@@ -3,17 +3,19 @@
 }
 
 #nav-bar {
- 
+
 
   display: flex;
   flex-wrap: wrap;
   flex-shrink: 1;
-  margin-top: 10px;
+
+  height: 80px;
 
 }
 
 nav ul {
-  
+  margin-top: 24px;
+
   display: flex;
 
   gap: 40px;
@@ -49,12 +51,12 @@ div nav ul li a:hover {
   cursor: pointer;
   height: 50px;
 
-
 }
 
 .nav-bot {
   margin-right: 100px;
   margin-top: 5px;
+
 
 }
 
@@ -71,7 +73,7 @@ div nav ul li a:hover {
   flex: 1;
   display: flex;
   justify-content: end;
-  margin-right: 100px;
+  margin-right: 60px;
 }
 
 .nav-manu-ber {
@@ -89,17 +91,17 @@ div nav ul li a:hover {
   width: 100%;
 }
 
-section {
+.hero-section {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/banner.jpg');
 
-  height: 530px;
+  height: 600px;
 
   background-position: center;
   background-repeat: no-repeat;
 
   background-size: cover;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
 
 }
@@ -107,8 +109,8 @@ section {
 .bunner-Container {
   color: white;
   text-align: center;
-  padding-top: 40px;
-  margin-top: 25px;
+  padding-top: 20px;
+  margin-top: 20px;
 
 
 }
@@ -131,4 +133,61 @@ section {
 
   height: 60px;
   width: 270px;
+  margin-top: 140px;
+
+}
+
+#Head-line {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
+.speakers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+
+  margin: 40px;
+}
+
+.speaker-card {
+  border: 1px solid #dfdada;
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+
+.speaker-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: fill;
+
+
+}
+
+.speaker-tag,
+.speaker-name,
+.speaker-title {
+  margin-left: 20px;
+}
+
+.speaker-tag {
+  color: blue;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.speaker-name {
+  margin-top: 5px;
+  font-size: 1.2rem;
+}
+
+.speaker-title {
+  color: gray;
+  margin-bottom: 20px;
 }
